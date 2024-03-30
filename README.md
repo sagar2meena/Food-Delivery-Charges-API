@@ -1,11 +1,11 @@
 # Food-Delivery-Charges-API
-The Food Delivery Pricing API offers a robust solution tailored to meet the dynamic pricing requirements of food delivery services. By harnessing this API, businesses can seamlessly compute delivery charges, taking into account essential factors such as food item type (perishable or non-perishable), delivery distance, and specific delivery zones.
+The Food Delivery Charges API offers a robust solution tailored to meet the dynamic pricing requirements of food delivery services. By harnessing this API, businesses can seamlessly compute delivery charges, taking into account essential factors such as food item type (perishable or non-perishable), delivery distance, and specific delivery zones.
 
 
 ## Features
 The Food Delivery Pricing API offers a suite of features designed to provide flexible, dynamic pricing solutions for food delivery services. Key features include:
 
-**• Dynamic Pricing Calculation:**  Automatically computes delivery costs by considering the distance to the delivery destination, the type of item being delivered (perishable vs. non-perishable), and the delivery zone, ensuring accurate pricing for each order.
+**• Dynamic Charges Calculation:**  Automatically computes delivery costs by considering the distance to the delivery destination, the type of item being delivered (perishable vs. non-perishable), and the delivery zone, ensuring accurate pricing for each order.
 
 **• Perishable and Non-Perishable Item Support:** Distinct pricing models for perishable and non-perishable items, recognizing the unique requirements and urgency associated with transporting different types of food.
 
@@ -16,7 +16,7 @@ The Food Delivery Pricing API offers a suite of features designed to provide fle
 **• Secure and Reliable:** Hosted on Render.com, offering robust security features and high availability to ensure the API is always accessible when needed.
 
 ## Technologies and Libraries
-The Food Delivery Pricing API is built on a robust stack of technologies and libraries, ensuring high performance, ease of integration, and developer-friendly documentation. Here’s a breakdown of the core components:
+The Food Delivery Charges API is built on a robust stack of technologies and libraries, ensuring high performance, ease of integration, and developer-friendly documentation. Here’s a breakdown of the core components:
 
 ### Core Technologies
 • Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine, ideal for building fast and scalable network applications.<br />
@@ -36,7 +36,7 @@ The Food Delivery Pricing API is built on a robust stack of technologies and lib
 • @faker-js/faker: Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
 
 # API Documentation Overview
-This section provides a comprehensive overview of the Food Delivery Pricing API, detailing the available endpoints, their functionalities, required input data, and the expected response formats.
+This section provides a comprehensive overview of the Food Delivery Charges API, detailing the available endpoints, their functionalities, required input data, and the expected response formats.
 
 ## Base URL
 https://food-delivery-charges-api.onrender.com/api-docs
