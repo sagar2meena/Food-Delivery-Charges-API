@@ -19,7 +19,7 @@ const generateItems = (count) => {
 };
 
 const generatePricings = (organizationCount, itemCount, count) => {
-  const zones = ['centeral','suburban'];
+  const zones = ['central','suburban','rural'];
 
   return Array.from({ length: count }, () => ({
     organizationId: faker.number.int({ min: 1, max: organizationCount }),
