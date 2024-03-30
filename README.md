@@ -71,7 +71,7 @@ https://food-delivery-charges-api.onrender.com/api-docs
 
 ```
 {
-  "total_price": 23  
+  "total_price": 20.5 
 }
 ```
 
