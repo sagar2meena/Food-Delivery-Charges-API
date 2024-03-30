@@ -25,14 +25,14 @@ The Food Delivery Pricing API is built on a robust stack of technologies and lib
 • Sequelize: A promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication, and more.
 
 ### Documentation and Testing
-• Swagger-jsdoc: Integrates JSDoc comments with Swagger UI, allowing for the automatic generation of API documentation from the codebase.
-• Swagger UI Express: Serves auto-generated Swagger UI based on a Swagger definition, providing a visually interactive documentation.
-• Jest: A delightful JavaScript Testing Framework with a focus on simplicity, supporting project tests including unit and integration tests.
+• Swagger-jsdoc: Integrates JSDoc comments with Swagger UI, allowing for the automatic generation of API documentation from the codebase.<br />
+• Swagger UI Express: Serves auto-generated Swagger UI based on a Swagger definition, providing a visually interactive documentation.<br />
+• Jest: A delightful JavaScript Testing Framework with a focus on simplicity, supporting project tests including unit and integration tests.<br />
 • Supertest: A SuperAgent driven library for testing HTTP servers, used to perform API endpoint testing.
 
 ### Development Tools
-• Nodemon: Simplifies development by automatically restarting the node application when file changes in the directory are detected.
-• ESLint: A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.
+• Nodemon: Simplifies development by automatically restarting the node application when file changes in the directory are detected.<br />
+• ESLint: A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.<br />
 • @faker-js/faker: Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
 
 # API Documentation Overview
@@ -41,15 +41,16 @@ This section provides a comprehensive overview of the Food Delivery Pricing API,
 ## Base URL
 https://food-delivery-charges-api.onrender.com/api-docs
 ## Endpoints
+
 ### Swagger Page
-• Endpoint: /api-docs
-• Method: GET
-• Description: Swagger Landing page
+• Endpoint: /api-docs<br />
+• Method: GET<br />
+• Description: Swagger Landing page<br />
 • Authorization Required: No
 ### Calculate Delivery Cost
-• Endpoint: /api/pricing
-• Method: POST
-• Description: Calculates the delivery cost based on distance, item type, and delivery zone.
+• Endpoint: /api/pricing<br />
+• Method: POST<br />
+• Description: Calculates the delivery cost based on distance, item type, and delivery zone.<br />
 • Authorization Required: No
 
 ### Request example 
