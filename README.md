@@ -19,21 +19,21 @@ The Food Delivery Pricing API offers a suite of features designed to provide fle
 The Food Delivery Charges API is built on a robust stack of technologies and libraries, ensuring high performance, ease of integration, and developer-friendly documentation. Here’s a breakdown of the core components:
 
 ### Core Technologies
-• Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine, ideal for building fast and scalable network applications.<br />
-• Express: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.<br />
-• PostgreSQL (pg): A powerful, open-source object-relational database system used to store all application data securely and reliably.<br />
-• Sequelize: A promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication, and more.
+• ```Node.js:```  A JavaScript runtime built on Chrome's V8 JavaScript engine, ideal for building fast and scalable network applications.<br />
+• ```Express:``` A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.<br />
+• ```PostgreSQL (pg):``` A powerful, open-source object-relational database system used to store all application data securely and reliably.<br />
+• ```Sequelize:``` A promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication, and more.
 
 ### Documentation and Testing
-• Swagger-jsdoc: Integrates JSDoc comments with Swagger UI, allowing for the automatic generation of API documentation from the codebase.<br />
-• Swagger UI Express: Serves auto-generated Swagger UI based on a Swagger definition, providing a visually interactive documentation.<br />
-• Jest: A delightful JavaScript Testing Framework with a focus on simplicity, supporting project tests including unit and integration tests.<br />
-• Supertest: A SuperAgent driven library for testing HTTP servers, used to perform API endpoint testing.
+• ```Swagger-jsdoc:``` Integrates JSDoc comments with Swagger UI, allowing for the automatic generation of API documentation from the codebase.<br />
+• ```Swagger UI Express:``` Serves auto-generated Swagger UI based on a Swagger definition, providing a visually interactive documentation.<br />
+• ```Jest:``` A delightful JavaScript Testing Framework with a focus on simplicity, supporting project tests including unit and integration tests.<br />
+• ```Supertest:``` A SuperAgent driven library for testing HTTP servers, used to perform API endpoint testing.
 
 ### Development Tools
-• Nodemon: Simplifies development by automatically restarting the node application when file changes in the directory are detected.<br />
-• ESLint: A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.<br />
-• @faker-js/faker: Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
+• ```Nodemon:``` Simplifies development by automatically restarting the node application when file changes in the directory are detected.<br />
+• ```ESLint:``` A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.<br />
+• ```@faker-js/faker:``` Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
 
 # API Documentation Overview
 This section provides a comprehensive overview of the Food Delivery Charges API, detailing the available endpoints, their functionalities, required input data, and the expected response formats.
@@ -55,12 +55,13 @@ https://food-delivery-charges-api.onrender.com/api-docs
 
 ### Request example 
 
-{ <br />
+```{ <br />
   **"zone":** "central", <br />
   **"organization_id":** "005",<br />
   **"total_distance":** 12,<br />
   **"item_type":** "perishable"<br />
 }
+```
 
 ### Response
 **Status Code:** 200 OK<br />
