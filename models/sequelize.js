@@ -13,10 +13,10 @@ const sequelize = new Sequelize(
     dialect: 'postgres',
     logging: false,
     dialectOptions: {
-      // ssl: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test' ? {
-      //   require: true,
-      //   rejectUnauthorized: false
-      // } : false
+      ssl: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test' ? {
+        require: true,
+        rejectUnauthorized: false
+      } : false
     },
   },
 );
