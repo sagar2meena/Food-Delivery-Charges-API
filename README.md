@@ -55,19 +55,19 @@ https://food-delivery-charges-api.onrender.com/api-docs
 
 ### Request example 
 
-{
-  "zone": "central",
-  "organization_id": "005",
-  "total_distance": 12,
-  "item_type": "perishable"
+{ <br />
+  "zone": "central", <br />
+  "organization_id": "005",<br />
+  "total_distance": 12,<br />
+  "item_type": "perishable"<br />
 }
 
 ### Response
-Status Code: 200 OK
+Status Code: 200 OK<br />
 Content-Type: application/json
 
-{
-  "total_price": 20.5
+{<br />
+  "total_price": 20.5  <br />
 }
 
 ## Error Responses
@@ -81,8 +81,8 @@ Status Code: 400 Bad Request<br />
 Content-Type: application/json<br />
 Response:<br />
 
-{
-  "error": "Missing required fields"
+{<br />
+  "error": "Missing required fields" <br />
 }
 ### Invalid total_distance Value
 
@@ -92,8 +92,8 @@ Status Code: 400 Bad Request<br />
 Content-Type: application/json<br />
 Response:<br />
 
-{
-  "error": "Invalid total_distance value"
+{<br />
+  "error": "Invalid total_distance value"  <br />
 }
 ### Unsupported Item Type
 
@@ -103,8 +103,8 @@ Status Code: 400 Bad Request<br />
 Content-Type: application/json<br />
 Response:<br />
 
-{
-  "error": "Unsupported item type"
+{ <br />
+  "error": "Unsupported item type"  <br />
 }
 
 ### Pricing Information Not Found
@@ -115,8 +115,8 @@ Status Code: 404 Not Found<br />
 Content-Type: application/json<br />
 Response:<br />
 
-{
-  "error": "Pricing information not found for the provided parameters."
+{<br />
+  "error": "Pricing information not found for the provided parameters."  <br />
 }
 
 ### Internal Server Error
@@ -127,8 +127,8 @@ Status Code: 500 Internal Server Error<br />
 Content-Type: application/json<br />
 Response:
 
-{
-  "error": "An unexpected error occurred. Please try again later."
+{<br />
+  "error": "An unexpected error occurred. Please try again later." <br />
 }
 
 ## Testing Suite
