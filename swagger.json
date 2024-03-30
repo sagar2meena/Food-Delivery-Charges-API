@@ -1,0 +1,87 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "0.0.1",
+    "title": "Food Delivery Charges Backend API",
+    "description": "The Food Delivery Pricing API offers a robust solution tailored to meet the dynamic pricing requirements of food delivery services. By harnessing this API, businesses can seamlessly compute delivery charges, taking into account essential factors such as food item type (perishable or non-perishable), delivery distance, and specific delivery zones."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001/api",
+      "description": "Local Development Server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Dynamic Price Calculater",
+      "description": ""
+    }
+  ],
+  "paths": {
+    "/pricing": {
+      "post": {
+        "tags": ["Service Charges"],
+        "summary": "Delivery Charges Calculation",
+        "description": "Delivery Charges calculate based on food item type (perishable or non-perishable), delivery distance, and specific delivery zones.",
+        "requestBody": {
+          "description": " Passing Parameters Require zone , organization_id , total_distance and item_type",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Respond Successfully !",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }          
+      }
+    }
+  },
+  "components": { 
+    "schemas": {
+      "Request": {
+        "type": "object",
+        "properties": {
+          "zone": { "type": "string" },
+          "organization_id": { "type": "string" },
+          "total_distance": { "type": "number" },
+          "item_type": { "type": "string" }
+        },
+        "example": {
+          "zone": "center",
+          "organization_id": "5",
+          "total_distance": 12,
+          "item_type": "perishable"
+        }
+      },
+      "Response": {
+        "type": "object",
+        "properties": {
+          "total_price": { "type": "number" }
+        },
+        "example": { "total_price": 20.5 }
+      }
+    }
+  }
+}
