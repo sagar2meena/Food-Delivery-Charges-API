@@ -19,15 +19,15 @@ const generateItems = (count) => {
 };
 
 const generatePricings = (organizationCount, itemCount, count) => {
-  const zones = ['center'];
+  const zones = ['centeral','suburban'];
 
   return Array.from({ length: count }, () => ({
     organizationId: faker.number.int({ min: 1, max: organizationCount }),
     itemId: faker.number.int({ min: 1, max: itemCount }),
     zone: faker.helpers.arrayElement(zones),
-    baseDistanceInKm: faker.number.int({ min: 5, max: 5 }),
+    baseDistanceInKm: faker.number.int({ min: 5, max: 10 }),
     kmPrice: parseFloat(faker.commerce.price({min: 1, max: 1.5})),
-    fixPrice: parseFloat(faker.commerce.price({min: 10,max: 10})),
+    fixPrice: parseFloat(faker.commerce.price({min: 10,max: 20})),
   }));
 };
 

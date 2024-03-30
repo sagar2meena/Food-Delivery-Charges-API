@@ -69,8 +69,8 @@
           "item_type": { "type": "string" }
         },
         "example": {
-          "zone": "center",
-          "organization_id": "5",
+          "zone": "centeral",
+          "organization_id": "1",
           "total_distance": 12,
           "item_type": "perishable"
         }
@@ -80,7 +80,7 @@
         "properties": {
           "total_price": { "type": "number" }
         },
-        "example": { "total_price": 20.5 }
+        "example": { "total_price": 23 }
       }
     }
   }
