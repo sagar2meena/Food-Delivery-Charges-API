@@ -80,9 +80,9 @@ When interacting with the /pricing endpoint, clients may encounter various error
 
 ### Missing Required Fields
 
-If any of the required fields (zone, organization_id, total_distance, item_type) are missing from the request:
+If any of the required fields ```(zone, organization_id, total_distance, item_type)``` are missing from the request:
 
-**Status Code:** 400 Bad Request<br />
+**Status Code:** ```400 Bad Request``` <br />
 **Content-Type:** application/json <br />
 **Response:** <br />
 
@@ -95,7 +95,7 @@ If any of the required fields (zone, organization_id, total_distance, item_type)
 
 If the total_distance field is not a valid number or is less than or equal to 0:
 
-**Status Code:** 400 Bad Request<br />
+**Status Code:** ```400 Bad Request``` <br />
 **Content-Type:** application/json<br />
 **Response:** <br />
 
@@ -109,7 +109,7 @@ If the total_distance field is not a valid number or is less than or equal to 0:
 
 If the item_type field is not one of the supported types (perishable, non-perishable):
 
-**Status Code:** 400 Bad Request<br />
+**Status Code:** ```400 Bad Request``` <br />
 **Content-Type:** application/json<br />
 **Response:** <br />
 
@@ -123,7 +123,7 @@ If the item_type field is not one of the supported types (perishable, non-perish
 
 If no pricing information is found for the given parameters:
 
-**Status Code:** 404 Not Found<br />
+**Status Code:** ```404 Not Found``` <br />
 **Content-Type:** application/json<br />
 **Response:** <br />
 
@@ -137,7 +137,7 @@ If no pricing information is found for the given parameters:
 
 For any unexpected errors encountered by the server:
 
-**Status Code:** 500 Internal Server Error<br />
+**Status Code:** ```500 Internal Server Error``` <br />
 **Content-Type:** application/json<br />
 **Response:**
 ```
