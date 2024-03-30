@@ -43,31 +43,31 @@ https://food-delivery-charges-api.onrender.com/api-docs
 ## Endpoints
 
 ### Swagger Page
-• Endpoint: /api-docs<br />
-• Method: GET<br />
-• Description: Swagger Landing page<br />
-• Authorization Required: No
+**• Endpoint:** /api-docs<br />
+**• Method:** GET<br />
+**• Description:** Swagger Landing page<br />
+**• Authorization** Required: No
 ### Calculate Delivery Cost
-• Endpoint: /api/pricing<br />
-• Method: POST<br />
-• Description: Calculates the delivery cost based on distance, item type, and delivery zone.<br />
-• Authorization Required: No
+**• Endpoint:** /api/pricing<br />
+**• Method:** POST<br />
+**• Description:** Calculates the delivery cost based on distance, item type, and delivery zone.<br />
+**• Authorization Required:**  No
 
 ### Request example 
 
 { <br />
-  "zone": "central", <br />
-  "organization_id": "005",<br />
-  "total_distance": 12,<br />
-  "item_type": "perishable"<br />
+  **"zone":** "central", <br />
+  **"organization_id":** "005",<br />
+  **"total_distance":** 12,<br />
+  **"item_type":** "perishable"<br />
 }
 
 ### Response
-Status Code: 200 OK<br />
-Content-Type: application/json
+**Status Code:** 200 OK<br />
+**Content-Type:** application/json
 
 {<br />
-  "total_price": 20.5  <br />
+  **"total_price":** 20.5  <br />
 }
 
 ## Error Responses
@@ -77,58 +77,58 @@ When interacting with the /pricing endpoint, clients may encounter various error
 
 If any of the required fields (zone, organization_id, total_distance, item_type) are missing from the request:
 
-Status Code: 400 Bad Request<br />
-Content-Type: application/json<br />
-Response:<br />
+**Status Code:** 400 Bad Request<br />
+**Content-Type:** application/json<br />
+**Response:** <br />
 
 {<br />
-  "error": "Missing required fields" <br />
+  **"error":** "Missing required fields" <br />
 }
 ### Invalid total_distance Value
 
 If the total_distance field is not a valid number or is less than or equal to 0:
 
-Status Code: 400 Bad Request<br />
-Content-Type: application/json<br />
-Response:<br />
+**Status Code:** 400 Bad Request<br />
+**Content-Type:** application/json<br />
+**Response:** <br />
 
 {<br />
-  "error": "Invalid total_distance value"  <br />
+  **"error":** "Invalid total_distance value"  <br />
 }
 ### Unsupported Item Type
 
 If the item_type field is not one of the supported types (perishable, non-perishable):
 
-Status Code: 400 Bad Request<br />
-Content-Type: application/json<br />
-Response:<br />
+**Status Code:** 400 Bad Request<br />
+**Content-Type:** application/json<br />
+**Response:** <br />
 
 { <br />
-  "error": "Unsupported item type"  <br />
+  **"error":** "Unsupported item type"  <br />
 }
 
 ### Pricing Information Not Found
 
 If no pricing information is found for the given parameters:
 
-Status Code: 404 Not Found<br />
-Content-Type: application/json<br />
-Response:<br />
+**Status Code:** 404 Not Found<br />
+**Content-Type:** application/json<br />
+**Response:** <br />
 
 {<br />
-  "error": "Pricing information not found for the provided parameters."  <br />
+  **"error":** "Pricing information not found for the provided parameters."  <br />
 }
 
 ### Internal Server Error
 
 For any unexpected errors encountered by the server:
 
-Status Code: 500 Internal Server Error<br />
-Content-Type: application/json<br />
-Response:
+**Status Code:** 500 Internal Server Error<br />
+**Content-Type:** application/json<br />
+**Response:**
 
 {<br />
-  "error": "An unexpected error occurred. Please try again later." <br />
+  **"error":** "An unexpected error occurred. Please try again later." <br />
 }
 
 ## Testing Suite
@@ -136,10 +136,11 @@ Response:
 
 Tests are organized into files corresponding to the application components they target. For example:
 
-• validationErrors.test.js: Tests API input validation and error handling.<br />
-• pricingCalculation.test.js: Focuses on testing the logic for calculating delivery prices.<br />
-• databaseErrors.test.js: Ensures the application gracefully handles database errors.<br />
-• Each test file contains multiple test cases designed to cover a wide range of scenarios and edge cases.
+**• validationErrors.test.js:** Tests API input validation and error handling.<br />
+**• pricingCalculation.test.js:** Focuses on testing the logic for calculating delivery prices.<br />
+**• databaseErrors.test.js:** Ensures the application gracefully handles database errors.<br />
+
+ Each test file contains multiple test cases designed to cover a wide range of scenarios and edge cases.
 
 
 
