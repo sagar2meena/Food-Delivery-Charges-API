@@ -43,33 +43,37 @@ https://food-delivery-charges-api.onrender.com/api-docs
 ## Endpoints
 
 ### Swagger Page
-**• Endpoint:** /api-docs<br />
-**• Method:** GET<br />
+**• Endpoint:** ```/api-docs``` <br />
+**• Method:** ```GET``` <br />
 **• Description:** Swagger Landing page<br />
 **• Authorization** Required: No
 ### Calculate Delivery Cost
-**• Endpoint:** /api/pricing<br />
-**• Method:** POST<br />
+**• Endpoint:** ```/api/pricing``` <br />
+**• Method:** ```POST``` <br />
 **• Description:** Calculates the delivery cost based on distance, item type, and delivery zone.<br />
 **• Authorization Required:**  No
 
 ### Request example 
 
-```{ <br />
+```
+{
   "zone": "central" 
-  "organization_id": 1
+  "organization_id": "1"
   "total_distance": 12
-  "item_type": "perishable
+  "item_type": "perishable"
 }
+
 ```
 
 ### Response
 **Status Code:** 200 OK<br />
 **Content-Type:** application/json
 
+```
 {<br />
-  **"total_price":** 23  <br />
+  "total_price": 23  
 }
+```
 
 ## Error Responses
 When interacting with the /pricing endpoint, clients may encounter various errors due to incorrect or insufficient request parameters, or unexpected server issues. Below are descriptions of possible errors, including their HTTP status codes, content types, and example response bodies.
@@ -79,12 +83,14 @@ When interacting with the /pricing endpoint, clients may encounter various error
 If any of the required fields (zone, organization_id, total_distance, item_type) are missing from the request:
 
 **Status Code:** 400 Bad Request<br />
-**Content-Type:** application/json<br />
+**Content-Type:** application/json <br />
 **Response:** <br />
 
+```
 {<br />
-  **"error":** "Missing required fields" <br />
+  "error": "Missing required fields" 
 }
+```
 ### Invalid total_distance Value
 
 If the total_distance field is not a valid number or is less than or equal to 0:
@@ -93,9 +99,12 @@ If the total_distance field is not a valid number or is less than or equal to 0:
 **Content-Type:** application/json<br />
 **Response:** <br />
 
-{<br />
-  **"error":** "Invalid total_distance value"  <br />
+```
+{
+  "error": "Invalid total_distance value" 
 }
+```
+
 ### Unsupported Item Type
 
 If the item_type field is not one of the supported types (perishable, non-perishable):
@@ -104,9 +113,11 @@ If the item_type field is not one of the supported types (perishable, non-perish
 **Content-Type:** application/json<br />
 **Response:** <br />
 
-{ <br />
-  **"error":** "Unsupported item type"  <br />
+```
+{ 
+  "error":  "Unsupported item type"  
 }
+```
 
 ### Pricing Information Not Found
 
@@ -116,9 +127,11 @@ If no pricing information is found for the given parameters:
 **Content-Type:** application/json<br />
 **Response:** <br />
 
-{<br />
-  **"error":** "Pricing information not found for the provided parameters."  <br />
+```
+{
+  "error": "Pricing information not found for the provided parameters." 
 }
+```
 
 ### Internal Server Error
 
@@ -127,10 +140,11 @@ For any unexpected errors encountered by the server:
 **Status Code:** 500 Internal Server Error<br />
 **Content-Type:** application/json<br />
 **Response:**
-
-{<br />
-  **"error":** "An unexpected error occurred. Please try again later." <br />
+```
+{
+  "error": "An unexpected error occurred. Please try again later." 
 }
+```
 
 ## Testing Suite
 ### Test Files
