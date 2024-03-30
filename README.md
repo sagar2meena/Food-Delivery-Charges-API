@@ -56,10 +56,10 @@ https://food-delivery-charges-api.onrender.com/api-docs
 ### Request example 
 
 ```{ <br />
-  **"zone":** "central", <br />
-  **"organization_id":** "005",<br />
-  **"total_distance":** 12,<br />
-  **"item_type":** "perishable"<br />
+  "zone": "central" 
+  "organization_id": 1
+  "total_distance": 12
+  "item_type": "perishable
 }
 ```
 
@@ -68,7 +68,7 @@ https://food-delivery-charges-api.onrender.com/api-docs
 **Content-Type:** application/json
 
 {<br />
-  **"total_price":** 20.5  <br />
+  **"total_price":** 23  <br />
 }
 
 ## Error Responses
