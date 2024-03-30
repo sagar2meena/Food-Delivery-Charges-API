@@ -19,9 +19,9 @@ The Food Delivery Pricing API offers a suite of features designed to provide fle
 The Food Delivery Pricing API is built on a robust stack of technologies and libraries, ensuring high performance, ease of integration, and developer-friendly documentation. Here’s a breakdown of the core components:
 
 ### Core Technologies
-• Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine, ideal for building fast and scalable network applications.
-• Express: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-• PostgreSQL (pg): A powerful, open-source object-relational database system used to store all application data securely and reliably.
+• Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine, ideal for building fast and scalable network applications.<br />
+• Express: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.<br />
+• PostgreSQL (pg): A powerful, open-source object-relational database system used to store all application data securely and reliably.<br />
 • Sequelize: A promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication, and more.
 
 ### Documentation and Testing
