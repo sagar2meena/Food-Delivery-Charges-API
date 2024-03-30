@@ -77,9 +77,10 @@ When interacting with the /pricing endpoint, clients may encounter various error
 
 If any of the required fields (zone, organization_id, total_distance, item_type) are missing from the request:
 
-Status Code: 400 Bad Request
-Content-Type: application/json
-Response:
+Status Code: 400 Bad Request<br />
+Content-Type: application/json<br />
+Response:<br />
+
 {
   "error": "Missing required fields"
 }
@@ -87,9 +88,10 @@ Response:
 
 If the total_distance field is not a valid number or is less than or equal to 0:
 
-Status Code: 400 Bad Request
-Content-Type: application/json
-Response:
+Status Code: 400 Bad Request<br />
+Content-Type: application/json<br />
+Response:<br />
+
 {
   "error": "Invalid total_distance value"
 }
@@ -97,9 +99,10 @@ Response:
 
 If the item_type field is not one of the supported types (perishable, non-perishable):
 
-Status Code: 400 Bad Request
-Content-Type: application/json
-Response:
+Status Code: 400 Bad Request<br />
+Content-Type: application/json<br />
+Response:<br />
+
 {
   "error": "Unsupported item type"
 }
@@ -108,9 +111,10 @@ Response:
 
 If no pricing information is found for the given parameters:
 
-Status Code: 404 Not Found
-Content-Type: application/json
-Response:
+Status Code: 404 Not Found<br />
+Content-Type: application/json<br />
+Response:<br />
+
 {
   "error": "Pricing information not found for the provided parameters."
 }
@@ -119,9 +123,10 @@ Response:
 
 For any unexpected errors encountered by the server:
 
-Status Code: 500 Internal Server Error
-Content-Type: application/json
+Status Code: 500 Internal Server Error<br />
+Content-Type: application/json<br />
 Response:
+
 {
   "error": "An unexpected error occurred. Please try again later."
 }
@@ -131,9 +136,9 @@ Response:
 
 Tests are organized into files corresponding to the application components they target. For example:
 
-• validationErrors.test.js: Tests API input validation and error handling.
-• pricingCalculation.test.js: Focuses on testing the logic for calculating delivery prices.
-• databaseErrors.test.js: Ensures the application gracefully handles database errors.
+• validationErrors.test.js: Tests API input validation and error handling.<br />
+• pricingCalculation.test.js: Focuses on testing the logic for calculating delivery prices.<br />
+• databaseErrors.test.js: Ensures the application gracefully handles database errors.<br />
 • Each test file contains multiple test cases designed to cover a wide range of scenarios and edge cases.
 
 
