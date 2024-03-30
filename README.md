@@ -35,6 +35,107 @@ The Food Delivery Pricing API is built on a robust stack of technologies and lib
 • ESLint: A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.
 • @faker-js/faker: Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
 
+# API Documentation Overview
+This section provides a comprehensive overview of the Food Delivery Pricing API, detailing the available endpoints, their functionalities, required input data, and the expected response formats.
+
+## Base URL
+https://food-delivery-charges-api.onrender.com/api-docs
+## Endpoints
+### Swagger Page
+• Endpoint: /api-docs
+• Method: GET
+• Description: Swagger Landing page
+• Authorization Required: No
+### Calculate Delivery Cost
+• Endpoint: /api/pricing
+• Method: POST
+• Description: Calculates the delivery cost based on distance, item type, and delivery zone.
+• Authorization Required: No
+
+### Request example 
+
+{
+  "zone": "central",
+  "organization_id": "005",
+  "total_distance": 12,
+  "item_type": "perishable"
+}
+
+### Response
+Status Code: 200 OK
+Content-Type: application/json
+
+{
+  "total_price": 20.5
+}
+
+## Error Responses
+When interacting with the /pricing endpoint, clients may encounter various errors due to incorrect or insufficient request parameters, or unexpected server issues. Below are descriptions of possible errors, including their HTTP status codes, content types, and example response bodies.
+
+### Missing Required Fields
+
+If any of the required fields (zone, organization_id, total_distance, item_type) are missing from the request:
+
+Status Code: 400 Bad Request
+Content-Type: application/json
+Response:
+{
+  "error": "Missing required fields"
+}
+### Invalid total_distance Value
+
+If the total_distance field is not a valid number or is less than or equal to 0:
+
+Status Code: 400 Bad Request
+Content-Type: application/json
+Response:
+{
+  "error": "Invalid total_distance value"
+}
+### Unsupported Item Type
+
+If the item_type field is not one of the supported types (perishable, non-perishable):
+
+Status Code: 400 Bad Request
+Content-Type: application/json
+Response:
+{
+  "error": "Unsupported item type"
+}
+
+### Pricing Information Not Found
+
+If no pricing information is found for the given parameters:
+
+Status Code: 404 Not Found
+Content-Type: application/json
+Response:
+{
+  "error": "Pricing information not found for the provided parameters."
+}
+
+### Internal Server Error
+
+For any unexpected errors encountered by the server:
+
+Status Code: 500 Internal Server Error
+Content-Type: application/json
+Response:
+{
+  "error": "An unexpected error occurred. Please try again later."
+}
+
+## Testing Suite
+### Test Files
+
+Tests are organized into files corresponding to the application components they target. For example:
+
+• validationErrors.test.js: Tests API input validation and error handling.
+• pricingCalculation.test.js: Focuses on testing the logic for calculating delivery prices.
+• databaseErrors.test.js: Ensures the application gracefully handles database errors.
+• Each test file contains multiple test cases designed to cover a wide range of scenarios and edge cases.
+
+
 
 
 
