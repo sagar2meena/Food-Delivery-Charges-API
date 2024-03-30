@@ -70,7 +70,7 @@ https://food-delivery-charges-api.onrender.com/api-docs
 **Content-Type:** application/json
 
 ```
-{<br />
+{
   "total_price": 23  
 }
 ```
