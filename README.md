@@ -35,7 +35,7 @@ The Food Delivery Charges API is built on a robust stack of technologies and lib
 • ```ESLint:``` A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code quality and consistency.<br />
 • ```@faker-js/faker:``` Generates massive amounts of fake data for testing and development, ensuring robustness and reliability of data handling.
 
-# API Documentation Overview
+## API Documentation Overview
 This section provides a comprehensive overview of the Food Delivery Charges API, detailing the available endpoints, their functionalities, required input data, and the expected response formats.
 
 ## Base URL
@@ -157,8 +157,26 @@ Tests are organized into files corresponding to the application components they 
 
  Each test file contains multiple test cases designed to cover a wide range of scenarios and edge cases.
 
+ ## Database overview 
 
+### items table :
 
+ **• id :** {1,2,3,3,4,5}
+ **• type :*{perishable,non-persihable}*
+ **• description :** {pizza,burger,coffee,fruit,butter}]
+ 
+### organizations table :
 
+**• id :** {1,2,3,4,5}
+**• name :** {'viga entertainment','amazon','google','facebook','infosys'}
+
+### Pricing table :
+**• id :** {1 - 75}
+**• organization_id :** {1 - 5}
+**• item_id :** {1 - 5}
+**• zone :** {'central' , 'suburban', 'urban'}
+**• base_distance_in_km :** {5}
+**• km_price :** {perishable = {1.5} , non-perishable = {1}}
+**• fix_price :** {10}
 
 
