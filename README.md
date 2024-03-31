@@ -161,22 +161,22 @@ Tests are organized into files corresponding to the application components they 
 
 ### items table :
 
- **• id :** {1,2,3,3,4,5}
- **• type :*{perishable,non-persihable}*
+ **• id :** {1,2,3,3,4,5}<br />
+ **• type :** {perishable,non-persihable}<br />
  **• description :** {pizza,burger,coffee,fruit,butter}]
  
 ### organizations table :
 
-**• id :** {1,2,3,4,5}
+**• id :** {1,2,3,4,5}<br />
 **• name :** {'viga entertainment','amazon','google','facebook','infosys'}
 
 ### Pricing table :
-**• id :** {1 - 75}
-**• organization_id :** {1 - 5}
-**• item_id :** {1 - 5}
-**• zone :** {'central' , 'suburban', 'urban'}
-**• base_distance_in_km :** {5}
-**• km_price :** {perishable = {1.5} , non-perishable = {1}}
+**• id :** {1 - 75} <br />
+**• organization_id :**  {1 - 5}<br />
+**• item_id :** {1 - 5}<br />
+**• zone :** {'central' , 'suburban', 'urban'}<br />
+**• base_distance_in_km :** {5}<br />
+**• km_price :** {perishable = {1.5} , non-perishable = {1}}<br />
 **• fix_price :** {10}
 
 
