@@ -3,7 +3,7 @@ The Food Delivery Charges API offers a robust solution tailored to meet the dyna
 
 
 ## Features
-The Food Delivery Pricing API offers a suite of features designed to provide flexible, dynamic pricing solutions for food delivery services. Key features include:
+The Food Delivery Charges API offers a suite of features designed to provide flexible, dynamic pricing solutions for food delivery services. Key features include:
 
 **• Dynamic Charges Calculation:**  Automatically computes delivery costs by considering the distance to the delivery destination, the type of item being delivered (perishable vs. non-perishable), and the delivery zone, ensuring accurate pricing for each order.
 
